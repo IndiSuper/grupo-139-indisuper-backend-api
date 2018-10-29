@@ -1,0 +1,94 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "Adjunto": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "AsistenciaCapacitacion": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "AsistenciaCurso": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "CalificacionCapacitacion": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "CalificacionCurso": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "Capacitacion": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "CapacitacionUsuario": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "Curso": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "CursoUsuario": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "Empresa": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "Evento": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "Sancion": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "SancionCapacitacion": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "SancionCurso": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "Tipousuario": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "SubCategoria": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "Usuario": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "UsuarioSubCategoria": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  }
+
+
+
+
+
+
+}

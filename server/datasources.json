@@ -1,0 +1,12 @@
+{
+  "ds_indisuper": {
+    "host": "192.168.1.35",
+    "port": 5432,
+    "url": "",
+    "database": "db_indisuper",
+    "password": "postgres",
+    "name": "ds_indisuper",
+    "user": "postgres",
+    "connector": "postgresql"
+  }
+}
