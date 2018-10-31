@@ -1,14 +1,29 @@
 {
-  "name": "SancionCapacitacion",
+  "name": "SubcategoriaCursos",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "sancion_capacitacion"
+      "table": "subcategoria_cursos"
     }
   },
   "properties": {
-    "idSancionCapacitacion": {
+    "codSubcategoria": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "cod_subcategoria",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "codCurso": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,52 +31,7 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_sancion_capacitacion",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idSancion": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_sancion",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idCapacitacion": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_capacitacion",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idUsuario": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_usuario",
+        "columnName": "cod_curso",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,

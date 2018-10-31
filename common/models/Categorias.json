@@ -1,67 +1,22 @@
 {
-  "name": "CalificacionCurso",
+  "name": "Categorias",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "calificacion_curso"
+      "table": "categorias"
     }
   },
   "properties": {
-    "idCalificacion": {
+    "codCategoria": {
       "type": "Number",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_calificacion",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idUsuario": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_usuario",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idCurso": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_curso",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "nota": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "nota",
+        "columnName": "cod_categoria",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -69,9 +24,39 @@
         "nullable": "NO"
       }
     },
-    "fechaCreacion": {
+    "nombreCategoria": {
       "type": "String",
       "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "nombre_categoria",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "fotoCategoria": {
+      "type": "String",
+      "required": true,
+      "length": 200,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "foto_categoria",
+        "dataType": "character varying",
+        "dataLength": 200,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "fechaCreacion": {
+      "type": "String",
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,
@@ -86,7 +71,7 @@
     },
     "activo": {
       "type": "Boolean",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,

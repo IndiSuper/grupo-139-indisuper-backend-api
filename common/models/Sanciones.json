@@ -1,14 +1,14 @@
 {
-  "name": "SancionCurso",
+  "name": "Sanciones",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "sancion_curso"
+      "table": "sanciones"
     }
   },
   "properties": {
-    "idSancionCurso": {
+    "codSansion": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,7 +16,7 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_sancion_curso",
+        "columnName": "cod_sansion",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -24,45 +24,15 @@
         "nullable": "NO"
       }
     },
-    "idSancion": {
+    "tiempoSancion": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
       "postgresql": {
-        "columnName": "id_sancion",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idCurso": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_curso",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idUsuario": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_usuario",
-        "dataType": "bigint",
+        "columnName": "tiempo_sancion",
+        "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": 0,

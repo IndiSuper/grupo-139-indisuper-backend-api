@@ -1,14 +1,14 @@
 {
-  "name": "CursoUsuario",
+  "name": "AsistenciasCapacitaciones",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "curso_usuario"
+      "table": "asistencias_capacitaciones"
     }
   },
   "properties": {
-    "idCursoUsuario": {
+    "codCapacitacion": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,22 +16,7 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_curso_usuario",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idUsuario": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_usuario",
+        "columnName": "cod_capacitacion",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
@@ -39,14 +24,15 @@
         "nullable": "NO"
       }
     },
-    "idCurso": {
+    "codEstudiante": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
+      "id": 2,
       "postgresql": {
-        "columnName": "id_curso",
+        "columnName": "cod_estudiante",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,

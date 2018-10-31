@@ -1,14 +1,14 @@
 {
-  "name": "Adjunto",
+  "name": "Empresas",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "adjunto"
+      "table": "empresas"
     }
   },
   "properties": {
-    "idAdjunto": {
+    "codEmpresa": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,7 +16,7 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_adjunto",
+        "columnName": "cod_empresa",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -24,14 +24,14 @@
         "nullable": "NO"
       }
     },
-    "idCursoUsiario": {
+    "nit": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
       "postgresql": {
-        "columnName": "id_curso_usiario",
+        "columnName": "nit",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
@@ -39,14 +39,59 @@
         "nullable": "NO"
       }
     },
-    "rutaAdjunto": {
+    "nombreEmpresa": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "nombre_empresa",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "descripEmpresa": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "descrip_empresa",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "correoEmpresa": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "correo_empresa",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "webEmpresa": {
       "type": "String",
       "required": true,
       "length": 200,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "ruta_adjunto",
+        "columnName": "web_empresa",
         "dataType": "character varying",
         "dataLength": 200,
         "dataPrecision": null,
@@ -54,34 +99,34 @@
         "nullable": "NO"
       }
     },
-    "fecha": {
-      "type": "String",
-      "required": true,
+    "numEmpresa": {
+      "type": "Number",
+      "required": false,
       "length": null,
       "precision": null,
-      "scale": null,
+      "scale": 0,
       "postgresql": {
-        "columnName": "fecha",
-        "dataType": "timestamp without time zone",
+        "columnName": "num_empresa",
+        "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
+        "dataScale": 0,
+        "nullable": "YES"
       }
     },
-    "revisado": {
-      "type": "Boolean",
-      "required": true,
-      "length": null,
+    "direccionEmp": {
+      "type": "String",
+      "required": false,
+      "length": 50,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "revisado",
-        "dataType": "boolean",
-        "dataLength": null,
+        "columnName": "direccion_emp",
+        "dataType": "character varying",
+        "dataLength": 50,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "NO"
+        "nullable": "YES"
       }
     },
     "fechaCreacion": {

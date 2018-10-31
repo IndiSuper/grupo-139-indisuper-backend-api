@@ -1,37 +1,22 @@
 {
-  "name": "AsistenciaCurso",
+  "name": "AsistenciasCursos",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "asistencia_curso"
+      "table": "asistencias_cursos"
     }
   },
   "properties": {
-    "idAsistencia": {
+    "codHorario": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
-      "id": 1,
+      "id": 2,
       "postgresql": {
-        "columnName": "id_asistencia",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idCurso": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_curso",
+        "columnName": "cod_horario",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
@@ -39,14 +24,31 @@
         "nullable": "NO"
       }
     },
-    "idUsuario": {
+    "codCurso": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
+      "id": 1,
       "postgresql": {
-        "columnName": "id_usuario",
+        "columnName": "cod_curso",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "codEstudiante": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "id": 3,
+      "postgresql": {
+        "columnName": "cod_estudiante",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
@@ -63,21 +65,6 @@
       "postgresql": {
         "columnName": "estado",
         "dataType": "boolean",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "fecha": {
-      "type": "String",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "fecha",
-        "dataType": "timestamp without time zone",
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,

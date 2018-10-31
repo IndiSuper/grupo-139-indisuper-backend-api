@@ -1,14 +1,29 @@
 {
-  "name": "Sancion",
+  "name": "SancionesCapacitaciones",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "sancion"
+      "table": "sanciones_capacitaciones"
     }
   },
   "properties": {
-    "idSancion": {
+    "codSansion": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "cod_sansion",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "codCapacitacion": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,23 +31,8 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_sancion",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "tiempoSancion": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "tiempo_sancion",
-        "dataType": "integer",
+        "columnName": "cod_capacitacion",
+        "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": 0,

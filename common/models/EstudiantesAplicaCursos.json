@@ -1,67 +1,53 @@
 {
-  "name": "SubCategoria",
+  "name": "EstudiantesAplicaCursos",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "sub_categoria"
+      "table": "estudiantes_aplica_cursos"
     }
   },
   "properties": {
-    "idSubCategoria": {
+    "codEstudiante": {
       "type": "Number",
-      "required": false,
+      "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_sub_categoria",
-        "dataType": "integer",
+        "columnName": "cod_estudiante",
+        "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": 0,
         "nullable": "NO"
       }
     },
-    "categoria": {
-      "type": "String",
+    "codCurso": {
+      "type": "Number",
       "required": true,
-      "length": 20,
+      "length": null,
       "precision": null,
-      "scale": null,
+      "scale": 0,
+      "id": 2,
       "postgresql": {
-        "columnName": "categoria",
-        "dataType": "character varying",
-        "dataLength": 20,
+        "columnName": "cod_curso",
+        "dataType": "bigint",
+        "dataLength": null,
         "dataPrecision": null,
-        "dataScale": null,
+        "dataScale": 0,
         "nullable": "NO"
       }
     },
-    "nombreSubCategoria": {
-      "type": "String",
-      "required": true,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "nombre_sub_categoria",
-        "dataType": "character varying",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "descripcion": {
+    "adjuntoRequisitos": {
       "type": "String",
       "required": true,
       "length": 200,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "descripcion",
+        "columnName": "adjunto_requisitos",
         "dataType": "character varying",
         "dataLength": 200,
         "dataPrecision": null,
@@ -69,29 +55,44 @@
         "nullable": "NO"
       }
     },
-    "rutaImagen": {
-      "type": "String",
+    "revisadoReqcurso": {
+      "type": "Boolean",
       "required": true,
-      "length": 50,
+      "length": null,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "ruta_imagen",
-        "dataType": "character varying",
-        "dataLength": 50,
+        "columnName": "revisado_reqcurso",
+        "dataType": "boolean",
+        "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
       }
     },
-    "fechaCreacion": {
+    "admisiónCurso": {
+      "type": "Boolean",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "admisión_curso",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "fechaAplica": {
       "type": "String",
       "required": true,
       "length": null,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "fecha_creacion",
+        "columnName": "fecha_aplica",
         "dataType": "timestamp without time zone",
         "dataLength": null,
         "dataPrecision": null,

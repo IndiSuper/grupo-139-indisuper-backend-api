@@ -1,14 +1,14 @@
 {
-  "name": "Tipousuario",
+  "name": "CalificacionesCapacitaciones",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "tipousuario"
+      "table": "calificaciones_capacitaciones"
     }
   },
   "properties": {
-    "idTipoUsuario": {
+    "codCalificacion": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,7 +16,7 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_tipo_usuario",
+        "columnName": "cod_calificacion",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -24,18 +24,48 @@
         "nullable": "NO"
       }
     },
-    "nombreTipoUsuario": {
-      "type": "String",
+    "calificacion": {
+      "type": "Number",
       "required": true,
-      "length": 50,
+      "length": null,
       "precision": null,
-      "scale": null,
+      "scale": 0,
       "postgresql": {
-        "columnName": "nombre_tipo_usuario",
-        "dataType": "character varying",
-        "dataLength": 50,
+        "columnName": "calificacion",
+        "dataType": "integer",
+        "dataLength": null,
         "dataPrecision": null,
-        "dataScale": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "codEstudiante": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "cod_estudiante",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "codCapacitacion": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "cod_capacitacion",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
         "nullable": "NO"
       }
     },

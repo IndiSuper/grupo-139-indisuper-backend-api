@@ -1,14 +1,14 @@
 {
-  "name": "AsistenciaCapacitacion",
+  "name": "SubcategoriaEventos",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "asistencia_capacitacion"
+      "table": "subcategoria_eventos"
     }
   },
   "properties": {
-    "idAsistencia": {
+    "codSubcategoria": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,22 +16,7 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_asistencia",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idCapacitacion": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_capacitacion",
+        "columnName": "cod_subcategoria",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
@@ -39,54 +24,25 @@
         "nullable": "NO"
       }
     },
-    "idUsuario": {
+    "codEvento": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
+      "id": 2,
       "postgresql": {
-        "columnName": "id_usuario",
+        "columnName": "cod_evento",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "estado": {
-      "type": "Boolean",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "estado",
-        "dataType": "boolean",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "fecha": {
-      "type": "String",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "fecha",
-        "dataType": "timestamp without time zone",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
         "nullable": "NO"
       }
     },
     "fechaCreacion": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,
@@ -101,7 +57,7 @@
     },
     "activo": {
       "type": "Boolean",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,

@@ -1,67 +1,22 @@
 {
-  "name": "CalificacionCapacitacion",
+  "name": "TiposUsuarios",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "calificacion_capacitacion"
+      "table": "tipos_usuarios"
     }
   },
   "properties": {
-    "idCalificacion": {
+    "codTipoUsuario": {
       "type": "Number",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_calificacion",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idUsuario": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_usuario",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idCapacitacion": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_capacitacion",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "nota": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "nota",
+        "columnName": "cod_tipo_usuario",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -69,9 +24,24 @@
         "nullable": "NO"
       }
     },
-    "fechaCreacion": {
+    "nombreTipoUsuario": {
       "type": "String",
       "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "nombre_tipo_usuario",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "fechaCreacion": {
+      "type": "String",
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,
@@ -86,7 +56,7 @@
     },
     "activo": {
       "type": "Boolean",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,

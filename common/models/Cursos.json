@@ -1,14 +1,14 @@
 {
-  "name": "Capacitacion",
+  "name": "Cursos",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "capacitacion"
+      "table": "cursos"
     }
   },
   "properties": {
-    "idCapacitacion": {
+    "codCurso": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,7 +16,7 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_capacitacion",
+        "columnName": "cod_curso",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -24,59 +24,44 @@
         "nullable": "NO"
       }
     },
-    "idSubCategoria": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_sub_categoria",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idUsuario": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_usuario",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "fecha": {
-      "type": "String",
+    "fechainiCurso": {
+      "type": "Date",
       "required": true,
       "length": null,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "fecha",
-        "dataType": "timestamp without time zone",
+        "columnName": "fechaini_curso",
+        "dataType": "date",
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
       }
     },
-    "nombre": {
+    "fechafinCurso": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "fechafin_curso",
+        "dataType": "date",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "nombreCurso": {
       "type": "String",
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "nombre",
+        "columnName": "nombre_curso",
         "dataType": "character varying",
         "dataLength": 50,
         "dataPrecision": null,
@@ -84,14 +69,104 @@
         "nullable": "NO"
       }
     },
-    "detalles": {
+    "nivelCurso": {
+      "type": "String",
+      "required": false,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "nivel_curso",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "YES"
+      }
+    },
+    "duracionCurso": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "duracion_curso",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "descripciónCurso": {
+      "type": "String",
+      "required": true,
+      "length": 300,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "descripción_curso",
+        "dataType": "character varying",
+        "dataLength": 300,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "compromiso": {
+      "type": "String",
+      "required": true,
+      "length": 400,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "compromiso",
+        "dataType": "character varying",
+        "dataLength": 400,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "correoCurso": {
+      "type": "String",
+      "required": true,
+      "length": 100,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "correo_curso",
+        "dataType": "character varying",
+        "dataLength": 100,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "telCurso": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "tel_curso",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "lugarCurso": {
       "type": "String",
       "required": true,
       "length": 200,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "detalles",
+        "columnName": "lugar_curso",
         "dataType": "character varying",
         "dataLength": 200,
         "dataPrecision": null,
@@ -99,44 +174,59 @@
         "nullable": "NO"
       }
     },
-    "lugar": {
-      "type": "String",
+    "estadoCurso": {
+      "type": "Boolean",
       "required": true,
-      "length": 200,
+      "length": null,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "lugar",
-        "dataType": "character varying",
-        "dataLength": 200,
+        "columnName": "estado_curso",
+        "dataType": "boolean",
+        "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
       }
     },
-    "estado": {
-      "type": "String",
+    "canceladoCurso": {
+      "type": "Boolean",
       "required": true,
-      "length": 1,
+      "length": null,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "estado",
-        "dataType": "character varying",
-        "dataLength": 1,
+        "columnName": "cancelado_curso",
+        "dataType": "boolean",
+        "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
       }
     },
-    "ofrece": {
+    "requisitos": {
+      "type": "Boolean",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "requisitos",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "ofreceCurso": {
       "type": "String",
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "ofrece",
+        "columnName": "ofrece_curso",
         "dataType": "character varying",
         "dataLength": 50,
         "dataPrecision": null,
@@ -144,74 +234,14 @@
         "nullable": "NO"
       }
     },
-    "hora": {
-      "type": "String",
-      "required": true,
-      "length": 20,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "hora",
-        "dataType": "character varying",
-        "dataLength": 20,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "correoContacto": {
-      "type": "String",
-      "required": true,
-      "length": 100,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "correo_contacto",
-        "dataType": "character varying",
-        "dataLength": 100,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "duracion": {
+    "codAdministrador": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
       "postgresql": {
-        "columnName": "duracion",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "cupo": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "cupo",
-        "dataType": "integer",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "telefonoContacto": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "telefono_contacto",
+        "columnName": "cod_administrador",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
@@ -219,18 +249,33 @@
         "nullable": "NO"
       }
     },
-    "direccion": {
-      "type": "String",
+    "codDocente": {
+      "type": "Number",
       "required": true,
-      "length": 100,
+      "length": null,
       "precision": null,
-      "scale": null,
+      "scale": 0,
       "postgresql": {
-        "columnName": "direccion",
-        "dataType": "character varying",
-        "dataLength": 100,
+        "columnName": "cod_docente",
+        "dataType": "bigint",
+        "dataLength": null,
         "dataPrecision": null,
-        "dataScale": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "cupoCurso": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "cupo_curso",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
         "nullable": "NO"
       }
     },

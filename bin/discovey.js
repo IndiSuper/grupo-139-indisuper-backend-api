@@ -14,7 +14,7 @@ const app = loopback()
 const db = app.dataSource('ds_indisuper', {
 
   connector: 'postgresql',
-  hostname: '192.168.1.35',
+  hostname: 'localhost',
   port: 5432,
   user: 'postgres',
   password: 'postgres',
@@ -38,7 +38,7 @@ async function discover () {
 
   const schema = await db.discoverSchema(
 
-    'tipousuario', // the table name
+    'eventos', // the table name on database
 
     {
 
@@ -50,7 +50,7 @@ async function discover () {
 
   await writeFile(
 
-    'common/models/tipoUsuario.json',
+    'common/models/Eventos.json',
 
     JSON.stringify(schema, null, 2)
 

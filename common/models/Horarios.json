@@ -1,14 +1,14 @@
 {
-  "name": "Empresa",
+  "name": "Horarios",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "empresa"
+      "table": "horarios"
     }
   },
   "properties": {
-    "idEmpresa": {
+    "codHorario": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,7 +16,7 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_empresa",
+        "columnName": "cod_horario",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -24,14 +24,14 @@
         "nullable": "NO"
       }
     },
-    "nit": {
+    "codCurso": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
       "postgresql": {
-        "columnName": "nit",
+        "columnName": "cod_curso",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
@@ -39,94 +39,49 @@
         "nullable": "NO"
       }
     },
-    "nombreEmpresa": {
+    "lugarSesion": {
       "type": "String",
       "required": true,
-      "length": 50,
+      "length": 100,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "nombre_empresa",
+        "columnName": "lugar_sesion",
         "dataType": "character varying",
-        "dataLength": 50,
+        "dataLength": 100,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
       }
     },
-    "descripcion": {
-      "type": "String",
-      "required": false,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "descripcion",
-        "dataType": "character varying",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      }
-    },
-    "correoElectronico": {
-      "type": "String",
+    "diaSesion": {
+      "type": "Date",
       "required": true,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "correo_electronico",
-        "dataType": "character varying",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "paginaWeb": {
-      "type": "String",
-      "required": true,
-      "length": 200,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "pagina_web",
-        "dataType": "character varying",
-        "dataLength": 200,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "telefono": {
-      "type": "Number",
-      "required": false,
       "length": null,
       "precision": null,
-      "scale": 0,
+      "scale": null,
       "postgresql": {
-        "columnName": "telefono",
-        "dataType": "bigint",
+        "columnName": "dia_sesion",
+        "dataType": "date",
         "dataLength": null,
         "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "YES"
+        "dataScale": null,
+        "nullable": "NO"
       }
     },
-    "direccion": {
+    "horaSesion": {
       "type": "String",
-      "required": false,
-      "length": 50,
+      "required": true,
+      "length": null,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "direccion",
-        "dataType": "character varying",
-        "dataLength": 50,
+        "columnName": "hora_sesion",
+        "dataType": "time without time zone",
+        "dataLength": null,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "YES"
+        "nullable": "NO"
       }
     },
     "fechaCreacion": {

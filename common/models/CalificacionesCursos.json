@@ -1,14 +1,14 @@
 {
-  "name": "UsuarioSubCategoria",
+  "name": "CalificacionesCursos",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "usuario_sub_categoria"
+      "table": "calificaciones_cursos"
     }
   },
   "properties": {
-    "idUsuarioSubCategoria": {
+    "codCalificacion": {
       "type": "Number",
       "required": true,
       "length": null,
@@ -16,7 +16,7 @@
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_usuario_sub_categoria",
+        "columnName": "cod_calificacion",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -24,14 +24,29 @@
         "nullable": "NO"
       }
     },
-    "idUsuario": {
+    "calificacion": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
       "postgresql": {
-        "columnName": "id_usuario",
+        "columnName": "calificacion",
+        "dataType": "integer",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "codEstudiante": {
+      "type": "Number",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "cod_estudiante",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
@@ -39,14 +54,14 @@
         "nullable": "NO"
       }
     },
-    "idSubCategoria": {
+    "codCurso": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
       "postgresql": {
-        "columnName": "id_sub_categoria",
+        "columnName": "cod_curso",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,

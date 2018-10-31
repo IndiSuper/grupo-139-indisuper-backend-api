@@ -1,22 +1,22 @@
 {
-  "name": "CapacitacionUsuario",
+  "name": "Subcategorias",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "capacitacion_usuario"
+      "table": "subcategorias"
     }
   },
   "properties": {
-    "idCapacitacionUsuario": {
+    "codSubcategoria": {
       "type": "Number",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_capacitacion_usuario",
+        "columnName": "cod_subcategoria",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -24,46 +24,31 @@
         "nullable": "NO"
       }
     },
-    "idUsuario": {
-      "type": "Number",
+    "nombreSubcategoria": {
+      "type": "String",
       "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_usuario",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idCapacitacion": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_capacitacion",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "asistencia": {
-      "type": "Boolean",
-      "required": true,
-      "length": null,
+      "length": 50,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "asistencia",
-        "dataType": "boolean",
-        "dataLength": null,
+        "columnName": "nombre_subcategoria",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "fotoSubcategoria": {
+      "type": "String",
+      "required": true,
+      "length": 200,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "foto_subcategoria",
+        "dataType": "character varying",
+        "dataLength": 200,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
@@ -71,7 +56,7 @@
     },
     "fechaCreacion": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,
@@ -86,7 +71,7 @@
     },
     "activo": {
       "type": "Boolean",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,

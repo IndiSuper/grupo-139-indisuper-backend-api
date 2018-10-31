@@ -1,22 +1,22 @@
 {
-  "name": "Usuario",
+  "name": "Usuarios",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "usuario"
+      "table": "usuarios"
     }
   },
   "properties": {
-    "idUsuario": {
+    "codUsuario": {
       "type": "Number",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_usuario",
+        "columnName": "cod_usuario",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -24,44 +24,14 @@
         "nullable": "NO"
       }
     },
-    "idTipoUsuario": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_tipo_usuario",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idEmpresa": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_empresa",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "YES"
-      }
-    },
-    "foto": {
+    "fotoUsuario": {
       "type": "String",
       "required": false,
       "length": 200,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "foto",
+        "columnName": "foto_usuario",
         "dataType": "character varying",
         "dataLength": 200,
         "dataPrecision": null,
@@ -84,119 +54,14 @@
         "nullable": "YES"
       }
     },
-    "identificacion": {
+    "numIdentificacion": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
       "postgresql": {
-        "columnName": "identificacion",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "nombre": {
-      "type": "String",
-      "required": true,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "nombre",
-        "dataType": "character varying",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "apellidos": {
-      "type": "String",
-      "required": true,
-      "length": 50,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "apellidos",
-        "dataType": "character varying",
-        "dataLength": 50,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "fechaNacimiento": {
-      "type": "String",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "fecha_nacimiento",
-        "dataType": "timestamp without time zone",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "fechaExpedicion": {
-      "type": "String",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "fecha_expedicion",
-        "dataType": "timestamp without time zone",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "genero": {
-      "type": "String",
-      "required": true,
-      "length": 1,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "genero",
-        "dataType": "character varying",
-        "dataLength": 1,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "telefonoFijo": {
-      "type": "Number",
-      "required": false,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "telefono_fijo",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "YES"
-      }
-    },
-    "telefonoCelular": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "telefono_celular",
+        "columnName": "num_identificacion",
         "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
@@ -219,6 +84,111 @@
         "nullable": "NO"
       }
     },
+    "apellidoUsuario": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "apellido_usuario",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "fechaNac": {
+      "type": "String",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "fecha_nac",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "fechaExpc": {
+      "type": "String",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "fecha_expc",
+        "dataType": "timestamp without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "genero": {
+      "type": "String",
+      "required": true,
+      "length": 1,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "genero",
+        "dataType": "character varying",
+        "dataLength": 1,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "numFijo": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "num_fijo",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "numCel": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "num_cel",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "NO"
+      }
+    },
+    "nickname": {
+      "type": "String",
+      "required": true,
+      "length": 50,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "nickname",
+        "dataType": "character varying",
+        "dataLength": 50,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
     "clave": {
       "type": "String",
       "required": true,
@@ -234,14 +204,14 @@
         "nullable": "NO"
       }
     },
-    "recivirInformacion": {
+    "notificacion": {
       "type": "Boolean",
       "required": true,
       "length": null,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "recivir_informacion",
+        "columnName": "notificacion",
         "dataType": "boolean",
         "dataLength": null,
         "dataPrecision": null,
@@ -249,44 +219,29 @@
         "nullable": "NO"
       }
     },
-    "estado": {
+    "correoUsuario": {
       "type": "String",
       "required": true,
-      "length": 1,
+      "length": 80,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "estado",
+        "columnName": "correo_usuario",
         "dataType": "character varying",
-        "dataLength": 1,
+        "dataLength": 80,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
       }
     },
-    "correoElectronico": {
+    "direccionUsuario": {
       "type": "String",
       "required": false,
       "length": 80,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "correo_electronico",
-        "dataType": "character varying",
-        "dataLength": 80,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "YES"
-      }
-    },
-    "direccion": {
-      "type": "String",
-      "required": false,
-      "length": 80,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "direccion",
+        "columnName": "direccion_usuario",
         "dataType": "character varying",
         "dataLength": 80,
         "dataPrecision": null,
@@ -296,7 +251,7 @@
     },
     "fechaCreacion": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,
@@ -311,7 +266,7 @@
     },
     "activo": {
       "type": "Boolean",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,

@@ -1,22 +1,22 @@
 {
-  "name": "Evento",
+  "name": "Eventos",
   "options": {
     "idInjection": false,
     "postgresql": {
       "schema": "public",
-      "table": "evento"
+      "table": "eventos"
     }
   },
   "properties": {
-    "idEvento": {
+    "codEvento": {
       "type": "Number",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": 0,
       "id": 1,
       "postgresql": {
-        "columnName": "id_evento",
+        "columnName": "cod_evento",
         "dataType": "integer",
         "dataLength": null,
         "dataPrecision": null,
@@ -24,59 +24,14 @@
         "nullable": "NO"
       }
     },
-    "idSubCategoria": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_sub_categoria",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "idUsuario": {
-      "type": "Number",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": 0,
-      "postgresql": {
-        "columnName": "id_usuario",
-        "dataType": "bigint",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": 0,
-        "nullable": "NO"
-      }
-    },
-    "fecha": {
-      "type": "String",
-      "required": true,
-      "length": null,
-      "precision": null,
-      "scale": null,
-      "postgresql": {
-        "columnName": "fecha",
-        "dataType": "timestamp without time zone",
-        "dataLength": null,
-        "dataPrecision": null,
-        "dataScale": null,
-        "nullable": "NO"
-      }
-    },
-    "nombre": {
+    "nombreEvento": {
       "type": "String",
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "nombre",
+        "columnName": "nombre_evento",
         "dataType": "character varying",
         "dataLength": 50,
         "dataPrecision": null,
@@ -84,14 +39,44 @@
         "nullable": "NO"
       }
     },
-    "detalles": {
+    "fechaEvento": {
+      "type": "Date",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "fecha_evento",
+        "dataType": "date",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "horaEvento": {
+      "type": "String",
+      "required": true,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "hora_evento",
+        "dataType": "time without time zone",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "descripEvento": {
       "type": "String",
       "required": true,
       "length": 200,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "detalles",
+        "columnName": "descrip_evento",
         "dataType": "character varying",
         "dataLength": 200,
         "dataPrecision": null,
@@ -99,14 +84,14 @@
         "nullable": "NO"
       }
     },
-    "lugar": {
+    "lugarEvento": {
       "type": "String",
       "required": true,
       "length": 200,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "lugar",
+        "columnName": "lugar_evento",
         "dataType": "character varying",
         "dataLength": 200,
         "dataPrecision": null,
@@ -114,29 +99,44 @@
         "nullable": "NO"
       }
     },
-    "estado": {
+    "direccionEvento": {
       "type": "String",
       "required": true,
-      "length": 1,
+      "length": 200,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "estado",
+        "columnName": "direccion_evento",
         "dataType": "character varying",
-        "dataLength": 1,
+        "dataLength": 200,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
       }
     },
-    "ofrece": {
+    "estadoEvento": {
+      "type": "Boolean",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": null,
+      "postgresql": {
+        "columnName": "estado_evento",
+        "dataType": "boolean",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": null,
+        "nullable": "NO"
+      }
+    },
+    "ofreceEvento": {
       "type": "String",
       "required": true,
       "length": 50,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "ofrece",
+        "columnName": "ofrece_evento",
         "dataType": "character varying",
         "dataLength": 50,
         "dataPrecision": null,
@@ -144,45 +144,60 @@
         "nullable": "NO"
       }
     },
-    "hora": {
+    "fotoEvento": {
       "type": "String",
       "required": true,
-      "length": 20,
+      "length": 200,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "hora",
+        "columnName": "foto_evento",
         "dataType": "character varying",
-        "dataLength": 20,
+        "dataLength": 200,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "NO"
       }
     },
-    "correoContacto": {
+    "correoEvento": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": 100,
       "precision": null,
       "scale": null,
       "postgresql": {
-        "columnName": "correo_contacto",
+        "columnName": "correo_evento",
         "dataType": "character varying",
         "dataLength": 100,
         "dataPrecision": null,
         "dataScale": null,
-        "nullable": "NO"
+        "nullable": "YES"
       }
     },
-    "duracion": {
+    "telEvento": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": null,
+      "scale": 0,
+      "postgresql": {
+        "columnName": "tel_evento",
+        "dataType": "bigint",
+        "dataLength": null,
+        "dataPrecision": null,
+        "dataScale": 0,
+        "nullable": "YES"
+      }
+    },
+    "codAdministrador": {
       "type": "Number",
       "required": true,
       "length": null,
       "precision": null,
       "scale": 0,
       "postgresql": {
-        "columnName": "duracion",
-        "dataType": "integer",
+        "columnName": "cod_administrador",
+        "dataType": "bigint",
         "dataLength": null,
         "dataPrecision": null,
         "dataScale": 0,
@@ -191,7 +206,7 @@
     },
     "fechaCreacion": {
       "type": "String",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,
@@ -206,7 +221,7 @@
     },
     "activo": {
       "type": "Boolean",
-      "required": true,
+      "required": false,
       "length": null,
       "precision": null,
       "scale": null,

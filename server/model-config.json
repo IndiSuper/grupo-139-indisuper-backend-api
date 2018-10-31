@@ -13,82 +13,102 @@
       "./mixins"
     ]
   },
-  "Adjunto": {
+  "AsistenciasCapacitaciones": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "AsistenciaCapacitacion": {
+  "AsistenciasCursos": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "AsistenciaCurso": {
+  "CalificacionesCapacitaciones": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "CalificacionCapacitacion": {
+  "CalificacionesCursos": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "CalificacionCurso": {
+  "Capacitaciones": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "Capacitacion": {
+  "Categorias": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "CapacitacionUsuario": {
+  "Cursos": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "Curso": {
+  "Empresas": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "CursoUsuario": {
+  "EmpresasAdmins": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "Empresa": {
+  "EstudiantesAplicaCursos": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "Evento": {
+  "Eventos": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "Sancion": {
+  "Horarios": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "SancionCapacitacion": {
+  "InteresesEsc": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "SancionCurso": {
+  "Sanciones": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "Tipousuario": {
+  "SancionesCapacitaciones": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "SubCategoria": {
+  "SancionesCursos": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "Usuario": {
+  "SubcategoriaCursos": {
     "dataSource": "ds_indisuper",
     "public": true
   },
-  "UsuarioSubCategoria": {
+  "SubcategoriaEventos": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "Subcategorias": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "TiposUsuarios": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "Usuarios": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "UsuariosSansiones": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "UsuariosTiposusuarios": {
+    "dataSource": "ds_indisuper",
+    "public": true
+  },
+  "CategoriasSubcategorias": {
     "dataSource": "ds_indisuper",
     "public": true
   }
-
-
-
-
 
 
 }
