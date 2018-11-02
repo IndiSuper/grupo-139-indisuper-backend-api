@@ -11,9 +11,10 @@ $ npm -v
 
 Para levantar los servicios de forma local puede crear la base de datos [db_indisuper](https://github.com/IndiSuper/db_indisuper) en postgres
 
-~~~
-$ node .
-~~~
+Dentro de la carpeta *grupo-139-indisuper-backend-api* ejecute
+
+> $ node .  (o npm start)
+
 
 
 
