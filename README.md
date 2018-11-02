@@ -12,7 +12,7 @@ $ npm -v
 Para levantar los servicios de forma local puede crear la base de datos [db_indisuper](https://github.com/IndiSuper/db_indisuper) en postgres
 
 
-# ¿Cómo contribuir? 
+## ¿Cómo contribuir? 
 
 Crear una nueva rama desde la rama dev con el nombre describiendo el cambio y la fecha asi: 
 
